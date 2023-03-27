@@ -5,11 +5,7 @@ on:
     branches:
     - "*"
  workflow_dispatch:
-        rainbowui:
-        type: boolean
-        description: 'whether to apply rainbow ui'
-        default: 'false'
-
+      
 jobs:
   build:
     runs-on: ubuntu-22.04
