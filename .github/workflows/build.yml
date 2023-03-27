@@ -32,7 +32,7 @@ jobs:
           make ${{ matrix.target }}
           if [ "${{ matrix.target }}" = "DIR-882" ]; then
             image=$(ls trunk/images/*.trx)
-            mv $image $(echo $image | sed 's/DIR-882/')
+            mv $image $(echo $image | sed 's/DIR/DIR-882/')
           fi
       - uses: actions/upload-artifact@v3
         with:
